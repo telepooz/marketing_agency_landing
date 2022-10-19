@@ -168,7 +168,7 @@ img {
     min-height: 811px;
 
     padding-bottom: 30px;
-    background-image: url("../img/fon.jpg");
+    background-image: url(img/fon.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -300,7 +300,7 @@ img {
 
 .footer {
     padding-top: 300px;
-    background-image: url(../img/bg.jpg);
+    background-image: url(img/bg.jpg);
     color: #fff;
     background-position: center;
     background-size: cover;
@@ -437,23 +437,23 @@ img {
 }
 
 .social-link-vk {
-    background-image: url(../img/vk1.png);
+    background-image: url(img/vk1.png);
 
 
 }
 
 .social-link-tw {
-    background-image: url(../img/git.png);
+    background-image: url(img/git.png);
 
 }
 
 .social-link-g {
-    background-image: url(../img/g.png);
+    background-image: url(img/g.png);
 
 }
 
 .social-link-in {
-    background-image: url(../img/in.png);
+    background-image: url(img/in.png);
 
 }
 
