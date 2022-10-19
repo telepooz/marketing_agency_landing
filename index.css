@@ -95,7 +95,9 @@ img {
 .burger {
     --offset-horizontal: 11px;
     --offset-vertical: 14px;
-    position: relative;
+    position: absolute;
+    right: 20px;
+    bottom: -55px;
     border-radius: 100%;
     padding: var(--offset-vertical) var(--offset);
 
@@ -125,6 +127,41 @@ img {
 
 }
 
+.burger-menu {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    transition: all 1s ease;
+}
+
+.burger-menu.closed {
+    top: -236px;
+}
+
+.burger-menu.opened {
+    top: 0;
+}
+
+.burger-menu-item {
+    padding: 10px 40px;
+    border-bottom: 1px solid #4D533C;
+    color: #4D533C;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.burger-menu-item:hover {
+    background-color: #4D533C;
+    color: #fff;
+}
+
+.burger-menu-item:last-child {
+    border-bottom: unset;
+}
+
 .hero {
     padding-top: 189px;
     padding-bottom: 100px;
@@ -146,7 +183,7 @@ img {
     display: inline-block;
     margin-bottom: 22px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 21px;
 
 }
@@ -165,7 +202,7 @@ img {
     margin: 0;
     margin-bottom: 45px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
 
 }
@@ -385,9 +422,9 @@ img {
     height: 33px;
 
     border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px auto;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 30px auto; */
     opacity: 0.4;
     transition: opacity 0.3s ease-in-out;
 
@@ -399,13 +436,14 @@ img {
 
 }
 
-.social-link-fb {
-    background-image: url(../img/fb.png);
+.social-link-vk {
+    background-image: url(../img/vk1.png);
+
 
 }
 
 .social-link-tw {
-    background-image: url(../img/tw.png);
+    background-image: url(../img/git.png);
 
 }
 
@@ -473,6 +511,10 @@ img {
 
 
 @media (max-width: 576px) {
+    .burger-menu {
+        left: 0;
+        text-align: center;
+    }
     .footer-middle {
         --grid-gap: 40px;
         grid-template-columns: repeat(1, 1fr);

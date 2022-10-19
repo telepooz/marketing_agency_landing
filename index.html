@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="index.css">
     <title>Webovio.</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;500;700&display=swap" rel="stylesheet">
@@ -20,25 +19,33 @@
             <a class="logo">
                 <img src="img/logo.svg" alt="Webovio logo">
             </a>
-            <button class="burger btn-reset" aria-label="Open menu">
+        </div>
+        <ul class="burger-menu closed" id="burger-menu">
+            <li class="burger-menu-item">Главная</li>
+            <li class="burger-menu-item">О нас</li>
+            <li class="burger-menu-item">Контакты</li>
+            <li class="burger-menu-item">Продукты</li>
+            <li class="burger-menu-item">Услуги</li>
+            <li class="burger-menu-item">Вакансии</li>
+            <button class="burger btn-reset" id="burger" aria-label="Open menu">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
             </button>
-        </div>
+        </ul>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <span class="hero-subtitle">A place where </span>
+                    <span class="hero-subtitle">Представляем Вашему вниманию </span>
                     <h1 class="hero-title">
-                        A&nbsp;creative agency for redemptive brands
+                        Маркетинговое агентство для раскрутки бренда
                     </h1>
                     <p class="hero-descr">
-                        Anteelo is&nbsp;a&nbsp;leading strategic design firm that builds
-                        powerful digital solutions for startups and enterprises.
+                        Anteelo&nbsp;&mdash; ведущая фирма по&nbsp;стратегическому дизайну, которая создает мощные
+                        цифровые решения для стартапов и&nbsp;предприятий.
                     </p>
                     <a href="#" class="hero-link link">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -52,7 +59,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Get in touch</span>
+                        <span>Связаться</span>
                     </a>
                 </div>
             </div>
@@ -60,15 +67,13 @@
         <section class="services">
             <div class="container">
                 <h2 class="site-title services-title">
-                    Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way to&nbsp;Kick off
-                    Your Product Idea
+                    Deation &amp;&nbsp;Evaluation&nbsp;&mdash; лучший способ придумать идею для Вашего вашего продукта
                 </h2>
                 <ul class="services-list list-reset">
                     <li class="services-item">
-                        <h3 class="services-subtitle">Product Design Sprint</h3>
+                        <h3 class="services-subtitle">Быстрое составление дизайна </h3>
                         <p class="services-descr">
-                            A&nbsp;five-day workshop that will help you answer crucial
-                            business questions
+                            Пятидневный семинар, который поможет вам ответить на&nbsp;важные вопросы бизнеса
                         </p>
                         <a href="#" class="services-link link">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -82,14 +87,14 @@
                                     </g>
                                 </g>
                             </svg>
-                            Read More
+                            Узнать больше
                         </a>
                     </li>
                     <li class="services-item">
-                        <h3 class="services-subtitle">Scoping Session</h3>
+                        <h3 class="services-subtitle">Обзорная сессия</h3>
                         <p class="services-descr">
-                            A&nbsp;workshop aimed at&nbsp;shaping your business idea,
-                            answering questions regarding project planning
+                            Семинар, направленный на&nbsp;формирование вашей бизнес-идеи, ответы на&nbsp;вопросы,
+                            касающиеся планирования проекта
                         </p>
                         <a href="#" class="services-link link">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -103,17 +108,16 @@
                                     </g>
                                 </g>
                             </svg>
-                            Read More
+                            Узнать больше
                         </a>
                     </li>
                     <li class="services-item">
                         <h3 class="services-subtitle">
                             UX <br>
-                            Review
+                            Проработка
                         </h3>
                         <p class="services-descr">
-                            An&nbsp;evaluation which will help you radically improve your
-                            product.
+                            Оценка, которая поможет вам значительно улучшить ваш продукт.
                         </p>
                         <a href="#" class="services-link link">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -127,18 +131,15 @@
                                     </g>
                                 </g>
                             </svg>
-                            Read More
+                            Узнать больше
                         </a>
                     </li>
                     <li class="services-item">
                         <h3 class="services-subtitle">
-                            Code <br>
-                            Review
+                            Обзор<br> кода
                         </h3>
                         <p class="services-descr">
-                            Do&nbsp;you know what one of&nbsp;the key secrets
-                            of&nbsp;success is&nbsp;what makes people successful
-                            in&nbsp;business
+                            Известен ли вам ключевой секрет успеха в бизнесе?
                         </p>
                         <a href="#" class="services-link link">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +153,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            Read More
+                            Узнать больше
                         </a>
                     </li>
                 </ul>
@@ -162,7 +163,7 @@
         <section class="get-started">
             <div class="container">
                 <h2 class="get-started-title">
-                    Let&rsquo;s make something amazing together.
+                    Давайте сделаем что-то удивительное вместе.
                 </h2>
                 <a href="#" class="get-started-link link">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -176,7 +177,7 @@
                             </g>
                         </g>
                     </svg>
-                    let's get started
+                    Давайте начнем
                 </a>
 
             </div>
@@ -187,48 +188,48 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-contacts-item">
-                    <span class="footer-contacts-text">Phone</span>
-                    <a href="tel:+3250312832" class="footer-contacts-value">+32 50 31 28 32</a>
+                    <span class="footer-contacts-text">Телефон</span>
+                    <a href="tel:+79999999999" class="footer-contacts-value">+7 (999) 999-99-99</a>
                 </div>
                 <div class="footer-contacts-item">
-                    <span class="footer-contacts-text">Address</span>
+                    <span class="footer-contacts-text">Адрес</span>
                     <address class="footer-contacts-value">
-                        491 Merlin Crest Suite 963
+                        Улица Ленина
                     </address>
                 </div>
             </div>
             <div class="footer-middle">
                 <div class="footer-column">
-                    <h3 class="footer-title">Services</h3>
+                    <h3 class="footer-title">Сервисы</h3>
                     <ul class="footer-list list-reset">
                         <li class="footer-item">
-                            <a href="#" class="footer-link"> Strategy Design</a>
+                            <a href="#" class="footer-link"> Разработка стратегии</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Product Design</a>
+                            <a href="#" class="footer-link">Дизайн продукта</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Content Strategy</a>
+                            <a href="#" class="footer-link">Разработка контента</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Brand Strategy</a>
+                            <a href="#" class="footer-link">Разработка бренда</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Development </a>
+                            <a href="#" class="footer-link">Разработка изображения </a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Help And Advice</h3>
+                    <h3 class="footer-title">Помощь и советы</h3>
                     <ul class="footer-list list-reset">
                         <li class="footer-item">
-                            <a href="#" class="footer-link">How it works</a>
+                            <a href="#" class="footer-link">Как это работает</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Contact Support</a>
+                            <a href="#" class="footer-link">Контактная поддержка</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Privacy Policy</a>
+                            <a href="#" class="footer-link">Политика безопастности</a>
                         </li>
                         <li class="footer-item">
                             <a href="#" class="footer-link">FAQ</a>
@@ -236,45 +237,38 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Company</h3>
+                    <h3 class="footer-title">Наша компания</h3>
                     <ul class="footer-list list-reset">
                         <li class="footer-item">
-                            <a href="#" class="footer-link">About</a>
+                            <a href="#" class="footer-link">О Нас</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Blog</a>
+                            <a href="#" class="footer-link">Блог</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Contact</a>
+                            <a href="#" class="footer-link">Контакты</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer-link">Jobs</a>
+                            <a href="#" class="footer-link">Вакансии</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Get in Touch</h3>
+                    <h3 class="footer-title">Связаться</h3>
                     <div class="footer-text">
-                        Feel free to&nbsp;get in&nbsp;touch with&nbsp;us vai email
+                        Не&nbsp;стесняйтесь связаться с&nbsp;нами по&nbsp;электронной почте
                     </div>
-                    <a href="mailto:info.webovio@gmail.com" class="footer-mail">info.webovio@gmail.com</a>
+                    <a href="mailto:info.webovio@gmail.com" class="footer-mail">vozianow2015@yandex.ru</a>
                     <ul class="social list-reset">
                         <li class="social-item">
-                            <a href="#" class="social-link social-link-fb" target="_blank"
-                                aria-label="link to Facebook"></a>
+                            <a href="https://vk.com/feed" class="social-link social-link-vk" target="_blank"
+                                aria-label="link to VK"></a>
                         </li>
                         <li class="social-item">
-                            <a href="#" class="social-link social-link-tw" target="_blank"
-                                aria-label="link to Twitter"></a>
+                            <a href="https://github.com/telepooz" class="social-link social-link-tw" target="_blank"
+                                aria-label="link to GitHub"></a>
                         </li>
-                        <li class="social-item">
-                            <a href="#" class="social-link social-link-g" target="_blank"
-                                aria-label="link to Google"></a>
-                        </li>
-                        <li class="social-item">
-                            <a href="#" class="social-link social-link-in" target="_blank"
-                                aria-label="link to linkedin"></a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -282,10 +276,12 @@
                 <a class="logo">
                     <img src="img/logo2.svg" alt="Webovio logo">
                 </a>
-                <small class="copyright">&copy;&nbsp;2020@webovio. All Rights Reserved.</small>
+                <small class="copyright">&copy;&nbsp;2022 by <span
+                        style="color: red; font-weight:bold;">telepooz</span>. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
